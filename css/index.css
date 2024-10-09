@@ -16,14 +16,6 @@ body {
 }
 
 /* Header */
-.hero-wrapper {
-  background-image: url("../assets/introimg.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 0 0 20px 0;
-}
-
 header {
   position: sticky;
   top: 0;
@@ -45,6 +37,14 @@ header a {
 
 header nav a:hover {
   text-decoration: underline;
+}
+
+.hero-wrapper {
+  background-image: url("../assets/introimg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0 0 20px 0;
 }
 
 #intro {
@@ -70,7 +70,7 @@ header nav a:hover {
   margin-left: 40px;
 }
 
-/* Globally */
+/* Global */
 section {
   min-height: 90vh;
   display: flex;
@@ -93,6 +93,7 @@ section h2 {
   text-align: center;
   font-size: 1.3rem;
   width: 50%;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
@@ -122,6 +123,8 @@ section h2 {
 .card img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .card h3 {
@@ -237,6 +240,16 @@ footer {
   h2::before,
   h2::after {
     margin: 0 10px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
   }
 }
 
