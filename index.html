@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This is Front-end Developer Diana Bergelin's portfolio page | Home"
+      content="This is Front-end Developer student Diana Bergelin's portfolio page | Home"
     />
     <title>Diana Bergelin</title>
     <link
@@ -26,6 +26,7 @@
     href="./assets/favicon-16x16.png"
   />
     <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./mjs/hamburger.mjs"></script>
     <script
       src="https://kit.fontawesome.com/e9ab0044c8.js"
       crossorigin="anonymous"
@@ -33,13 +34,19 @@
   </head>
   <body>
     <header>
-        <div class="Logo-name">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          
+        <div>
           <a href="./index.html"
             ><img src="./assets/dianabergelin.png" class="logo" alt="Your Photo"
           /></a>
         </div>
   
-        <nav>
+        <nav class="nav-menu">
           <a href="#intro">Home</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#about">About</a>
@@ -50,7 +57,8 @@
     <main>
       <section id="intro">
         <div class="hero-content">
-          <h1>Front-End Developer.</h1>
+          <h1>Front-End Developer student.</h1>
+          <p id="based">Based in Stockholm, Sweden.</p>
           <p>"Bringing creative designs to life."</p>
         </div>
       </section>
@@ -62,7 +70,7 @@
 
         <div class="projects">
           <div class="card">
-            <img src="./assets/crosscourse.png" alt="Cross course, Game Hub Screenshot" />
+            <img src="./assets/crosscourse.jpg" alt="Cross course, Game Hub Screenshot" />
             <h3>Cross Course Project: GameHub</h3>
             <p>A responsive gaming store that allows users to browse, filter, and add games to their cart.</p>
             <a
@@ -76,7 +84,7 @@
           </div>
 
           <div class="card">
-            <img src="./assets/semesterproject.png" alt="Semester Project, Stockholm Science Museum Screenshot" />
+            <img src="./assets/semesterproject.jpg" alt="Semester Project, Stockholm Science Museum Screenshot" />
             <h3>Semester Project: Science Museum</h3>
             <p>A website for a museum aimed at children, with interactive and educational exhibits.</p>
             <a
@@ -90,7 +98,7 @@
           </div>
 
           <div class="card">
-            <img src="./assets/projectexam.png" alt="Project exam, blog site Deleine Hairstudio Screenshot" />
+            <img src="./assets/projectexam.jpg" alt="Project exam, blog site Deleine Hairstudio Screenshot" />
             <h3>Project Exam: Deleine Hairstudio</h3>
             <p>A blog site that allows users to register, login, create, update and delete blog posts.</p>
             <a href="https://github.com/Anaid0616/project-exam1"
@@ -103,14 +111,16 @@
 
       <section id="about">
         <h2>About Me.</h2>
+
         <div class="about-content">
           <p>
-            I'm a Front-End Developer with a passion for creating engaging user
+            Hello I'm Diana Bergelin and I'm a Front-End Developer student 
+            at Noroff with a passion for creating engaging user
             experiences. I have experience with HTML, CSS, and JavaScript, and I
-            love making designs come to life. In my free time, I enjoy drawing,
+            love making designs come to life. I'm a problem solver and a thinker. In my free time, I enjoy drawing,
             photography, and working on home projects.
           </p>
-          <img src="./assets/jag.jpg" alt="Your Photo" />
+          <img src="./assets/jagfärg.jpg" alt="Your Photo" />
         </div>
       </section>
 
