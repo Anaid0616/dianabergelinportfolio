@@ -73,22 +73,4 @@ LinkedIn: Diana Bergelin
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
-
-Sure! Here’s how you can add a "Back to Top" link in your README, which will help users navigate back to the top of the page:
-
-At the end of your README, you can add:
-
-markdown
-Kopiera kod
-[Back to Top](#diana-bergelins-portfolio)
-Place this link at the bottom of each major section if you’d like, or just once at the very end. Make sure the anchor (#diana-bergelins-portfolio) matches the heading at the top of your README.
-
-Here’s an example of the "Back to Top" link included in your Markdown:
-
-markdown
-Kopiera kod
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 [Back to Top](#diana-bergelins-portfolio)
