@@ -184,6 +184,17 @@ section h2 {
   color: white;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* About */
 #about {
   padding: 50px 20px;
@@ -290,6 +301,20 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  #based {
+    font-size: 1.4rem;
+  }
+
+  .hero-content h3 {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-menu a {
     font-size: 0.9rem;
@@ -366,6 +391,18 @@ footer {
     transform: rotate(-45deg) translate(8px, -8px);
   }
 
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  #based {
+    font-size: 1.6rem;
+  }
+
+  .hero-content h3 {
+    font-size: 1rem;
+  }
+
   .projects {
     flex-direction: column;
     align-items: center;
@@ -374,6 +411,10 @@ footer {
   .card {
     width: 80%;
     margin-bottom: 20px;
+  }
+
+  .about-content p {
+    font-size: 1rem;
   }
 }
 
