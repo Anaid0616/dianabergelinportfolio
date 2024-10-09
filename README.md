@@ -21,11 +21,7 @@ This portfolio serves as a place to display my work and skills as a front-end de
 ## Technologies Used
 
 The project is built with:
-- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat-square) **HTML5**: For the structure and semantic markup.
-- ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat-square) **CSS3**: For styling and layout using Flexbox and Grid.
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square) **JavaScript**: For interactivity (hamburger menu, smooth scrolling).
-- ![FontAwesome](https://img.shields.io/badge/-Font%20Awesome-339AF0?logo=font-awesome&logoColor=white&style=flat-square) **FontAwesome**: For iconography.
-- ![GitHub Pages](https://img.shields.io/badge/-GitHub%20Pages-222222?logo=github&logoColor=white&style=flat-square) / ![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?logo=netlify&logoColor=white&style=flat-square) **GitHub Pages/Netlify**: For deployment.
+ ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat-square)  ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat-square)  ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)  ![FontAwesome](https://img.shields.io/badge/-Font%20Awesome-339AF0?logo=font-awesome&logoColor=white&style=flat-square)  ![GitHub Pages](https://img.shields.io/badge/-GitHub%20Pages-222222?logo=github&logoColor=white&style=flat-square) / ![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?logo=netlify&logoColor=white&style=flat-square) 
 
 
 ## Features
