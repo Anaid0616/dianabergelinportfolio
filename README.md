@@ -40,15 +40,14 @@ The project is built with:
 
 ### 🎮 [Cross-Course Project: GameHub](https://anaid0616.github.io/cross-course-project-design-html-css/)
 - A responsive gaming store that allows users to browse, filter, and add games to their cart.
-- ![GameHub Screenshot](./assets/crosscourse.jpg)
+
 
 ### 🧪 [Semester Project: Science Museum](https://anaid0616.github.io/semester-project-diana-bergelin/)
 - A website for a fictional museum aimed at children, with interactive and educational exhibits.
-- ![Science Museum Screenshot](./assets/semesterproject.jpg)
+
 
 ### ✍️ [Project Exam: Deleine Hairstudio](https://celadon-naiad-e81f9d.netlify.app/)
 - A blog site that allows users to register, login, create, update, and delete blog posts.
-- ![Deleine Hairstudio Screenshot](./assets/projectexam.jpg)
 
 ## Getting Started
 
