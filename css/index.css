@@ -124,7 +124,7 @@ section h2 {
   align-items: center;
   text-align: center;
   font-size: 1.3rem;
-  width: 50%;
+  width: 60%;
   margin-top: 10px;
   margin-bottom: 40px;
 }
@@ -313,6 +313,10 @@ footer {
   .hero-content h3 {
     font-size: 0.9rem;
   }
+
+  .lines {
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -331,12 +335,16 @@ footer {
     min-height: auto;
   }
 
-  h2 {
-    font-size: 1.5rem;
+  section h2 {
+    font-size: 1.9rem;
   }
 
-  h2::before,
-  h2::after {
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h3::before,
+  h3::after {
     margin: 0 10px;
   }
 
@@ -416,9 +424,7 @@ footer {
   .about-content p {
     font-size: 1rem;
   }
-}
 
-@media (max-width: 600px) {
   .about-content {
     flex-direction: column-reverse;
     text-align: center;
@@ -435,6 +441,18 @@ footer {
     max-width: 400px;
   }
 
+  .lines {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  section {
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
   .footer-menu ul {
     flex-direction: column;
   }
@@ -490,5 +508,11 @@ footer {
 @media (min-width: 931px) and (max-width: 1024px) {
   .nav-menu {
     gap: 25px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .about-content {
+    margin: 40px;
   }
 }
