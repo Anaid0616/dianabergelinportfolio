@@ -63,7 +63,7 @@ Feel free to reach out for any questions:
 
 Email: diana.bergelin@live.se
 
-LinkedIn: Diana Bergelin
+[LinkedIn](https://www.linkedin.com/in/diana-b-4209a72ba/)
 
 
 ## License
