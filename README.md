@@ -1,7 +1,7 @@
 # Diana Bergelin's Portfolio
 
 ![portfolio](https://github.com/user-attachments/assets/5127a48d-e4ab-4694-b99a-848626275855)
-
+[Live Site Portfolio](https://anaid0616.github.io/dianabergelinportfolio/)
 
 Welcome to my personal portfolio website. This project showcases my work as a **Front-End Developer student** at **Noroff School of Technology and Digital Media**. It features my skills, projects, and a bit about who I am.
 
@@ -63,7 +63,7 @@ Feel free to reach out for any questions:
 
 Email: diana.bergelin@live.se
 
-LinkedIn: Diana Bergelin
+[LinkedIn](https://www.linkedin.com/in/diana-b-4209a72ba/)
 
 
 ## License
