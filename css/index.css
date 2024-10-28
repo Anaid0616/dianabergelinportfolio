@@ -65,7 +65,7 @@ header {
 }
 
 .hero-wrapper {
-  background-image: url("../assets/introimg.png");
+  background-image: url("../assets/introimg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
