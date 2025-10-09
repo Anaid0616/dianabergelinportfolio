@@ -1,0 +1,230 @@
+/* Imports shared everywhere */
+@import url('./variables.css');
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&family=Satisfy&display=swap');
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-primary, #fff);
+  background-color: var(--color-secondary, #000);
+  font-family: 'Red Rose', serif;
+  font-weight: 550;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  max-width: 200px;
+  margin: 0 20px 0 20px;
+}
+
+/* === Hamburger === */
+.hamburger {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 19px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+/* Bars  */
+.bar {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  /* square ends => no border-radius */
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease, top 0.25s ease, opacity 0.2s ease;
+}
+
+/* exact integer positions to avoid wobble */
+.bar:nth-child(1) {
+  top: 0px;
+}
+.bar:nth-child(2) {
+  top: 9px;
+} /* 3px line + 6px gap = 9px to center */
+.bar:nth-child(3) {
+  top: 18px;
+}
+
+/* Active (X) — both bars meet at middle (9px) and rotate */
+.hamburger.active .bar:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+/* Nav */
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-left: auto;
+}
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Footer (unchanged design) */
+footer {
+  background-color: black;
+  padding: 60px;
+  color: white;
+  text-align: center;
+  border-top: grey solid 1px;
+}
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.footer-menu ul li {
+  margin: 0 10px;
+}
+.footer-menu ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 350;
+}
+.footer-menu ul li a:hover {
+  color: grey;
+}
+.footer-menu ul li:not(:last-child)::after {
+  content: '•';
+  margin-left: 10px;
+  color: white;
+}
+#copy {
+  font-weight: 350;
+}
+
+/* Accessibility */
+:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+  .logo {
+    max-width: 250px;
+    margin: 0 20px 0 20px;
+  }
+}
+
+/* Responsive rules needed by header/nav only */
+@media (max-width: 768px) {
+  /* show hamburger on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Off-canvas menu (closed by default) */
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.94);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease-in-out;
+    text-align: center;
+    padding-bottom: 100%;
+    margin-left: 0;
+    z-index: 999;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-menu a {
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+    margin-right: 0;
+  }
+}
+
+/* Desktop header layout (puts nav on the right) */
+@media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 679px) and (max-width: 941px) {
+  .logo {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 858px) {
+  .nav-menu a {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 942px) {
+  .logo {
+    max-width: 300px;
+    margin: 0 40px 0 40px;
+  }
+}
+
+/* Small util to avoid CLS for images with width/height */
+img[width][height] {
+  height: auto;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

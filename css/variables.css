@@ -1,4 +1,25 @@
 :root {
-  --color-primary: white;
-  --color-secondary: black;
+  /* Colors */
+  --color-primary: #ffffff; /* main text */
+  --color-secondary: #000000; /* page background */
+  --color-header-bg: rgba(0, 0, 0, 0.7); /* sticky header backdrop */
+  --color-border: #dddddd; /* card border */
+  --color-divider: #ffffff; /* white lines/dividers */
+  --color-link: grey; /* card/link icon color */
+  --color-link-hover: #ffffff; /* link hover color */
+  --color-footer-border: grey; /* footer top border */
+
+  /* Shadows */
+  --shadow-header: 0 2px 5px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  /* Radii */
+  --radius-card: 5px;
+  --radius-img: 5px;
+
+  /* Transitions */
+  --elevate: 0.3s;
+
+  /* Card layout */
+  --card-width-desktop: 30%;
 }

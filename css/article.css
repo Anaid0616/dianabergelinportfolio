@@ -1,0 +1,138 @@
+/* css frameworks */
+/* Uses your variables — neutral styles that won't affect index.css */
+@import url('./variables.css');
+
+:root {
+  --article-max: 1100px;
+  --pad: clamp(1rem, 4vw, 2rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  font-family: 'Red Rose', serif;
+  margin: 0;
+}
+
+/* Header */
+.article-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--pad);
+  max-width: var(--article-max);
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.back {
+  color: var(--color-primary);
+  text-decoration: none;
+  opacity: 0.8;
+}
+.back:hover {
+  opacity: 1;
+}
+
+h1#title {
+  font-size: clamp(1.4rem, 4.2vw, 1.9rem);
+}
+
+.share {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: var(--color-primary);
+  padding: 0.55rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Content */
+.article {
+  max-width: var(--article-max);
+  margin: 0 auto;
+  padding: 0 var(--pad) 3rem;
+}
+.hero {
+  margin: 1rem 0 2rem;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.hero figcaption {
+  opacity: 0.8;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.links {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+  flex-wrap: wrap;
+}
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+section {
+  margin: 1.5rem 0;
+}
+h2 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.4rem;
+}
+.commits a {
+  color: #9ad0ff;
+}
+
+/* Footer */
+.article-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.2rem var(--pad) 3rem;
+  max-width: var(--article-max);
+  margin: 0 auto;
+}
+.article-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  opacity: 0.8;
+}
+.article-footer a:hover {
+  opacity: 1;
+}
+
+/* Prevent layout shift on images with width/height set */
+img[width][height] {
+  height: auto;
+}
+
+/* Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+/* Small screens: keep button single-line and not tall */
+@media (max-width: 767px) {
+  .share {
+    white-space: nowrap;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
