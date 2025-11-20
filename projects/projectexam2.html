@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Article for Project Exam 2: Holidaze – a booking platform for stays where guests can find venues and managers can manage listings and bookings."
+    />
+    <title>Project Exam 2: Holidaze – Diana Bergelin</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/article.css" />
+
+    <script type="module" src="../mjs/share-link.mjs" defer></script>
+    <script type="module" src="../mjs/hamburger.mjs" defer></script>
+    <script
+      src="https://kit.fontawesome.com/e9ab0044c8.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="hamburger">
+        <span class="bar"></span><span class="bar"></span
+        ><span class="bar"></span>
+      </div>
+
+      <div>
+        <a href="../index.html#intro">
+          <img
+            src="../assets/dianabergelin.png"
+            class="logo"
+            alt="Diana Bergelin"
+          />
+        </a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="../index.html#intro">Home</a>
+        <a href="../index.html#portfolio">Portfolio</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <section class="article-header">
+        <a href="../index.html" class="back">← Back</a>
+        <h1 id="title">Project Exam 2: Holidaze</h1>
+        <button id="copyLink" class="share" aria-label="Copy link">
+          Copy link
+        </button>
+      </section>
+
+      <figure class="hero">
+        <img
+          src="../assets/thumbs/projectexam2.jpg"
+          width="1200"
+          height="675"
+          alt="Holidaze screenshot"
+        />
+        <figcaption>
+          Discover and book stays while venue managers create and manage
+          listings and bookings.
+        </figcaption>
+      </figure>
+
+      <div class="links">
+        <a
+          class="btn"
+          target="_blank"
+          rel="noopener"
+          href="https://holidazetravels.netlify.app/"
+        >
+          <i class="fas fa-globe"></i> Live site</a
+        >
+        <a
+          class="btn"
+          target="_blank"
+          rel="noopener"
+          href="https://github.com/Anaid0616/project-exam2"
+          ><i class="fab fa-github"></i> GitHub README</a
+        >
+        <a
+          class="btn"
+          target="_blank"
+          rel="noopener"
+          href="https://www.figma.com/design/zqP90JmttDDb7PWN2Sl9TA/Project-Exam-2?node-id=151-14975&t=vghzGQg6Iv4pYUJd-1"
+        >
+          <i class="fab fa-figma"></i> Figma design
+        </a>
+      </div>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Holidaze is a booking platform where costumers can discover and book
+          venues and venue managers can create, edit, and manage their own
+          venues and bookings. The project integrates the Noroff Holidaze API
+          and focuses on a clear, travel-brand inspired UI with strong UX around
+          search, filtering, booking, and profile management for both customers
+          and hosts.
+        </p>
+      </section>
+
+      <section>
+        <h2>Tech & Responsibilities</h2>
+        <ul>
+          <li>
+            <strong>Frontend:</strong> Next.js (App Router), TypeScript, React,
+            Tailwind CSS
+          </li>
+          <li>
+            <strong>API:</strong> Noroff Holidaze API — venues, bookings,
+            profiles, auth
+          </li>
+          <li>
+            <strong>UX:</strong> Search and filter UI, responsive layout,
+            skeleton states, profile dashboards for customers and venue managers
+          </li>
+          <li>
+            <strong>Build & Tools:</strong> VS Code, GitHub, Figma; deployed to
+            Netlify
+          </li>
+          <li>
+            <strong>Role:</strong> End-to-end — information architecture,
+            component design, state management, API integration, validation,
+            deployment
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Improvements</h2>
+        <ul class="commits">
+          <li>
+            <a
+              title="View commit on GitHub"
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/Anaid0616/project-exam2/commit/a0b99f00db634b99ae79f3c2ef1726cf85819863"
+              >Search filters & URL sync:</a
+            >
+            — rewrote filters to a single “Apply filters” action, reducing API
+            calls and fixing <code>429 Too Many Requests</code> errors.
+          </li>
+          <li>
+            <a
+              title="View commit on GitHub"
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/Anaid0616/project-exam2/commit/8291955b3989dcca81f88f4187129bca9f2badbf"
+              >Profile loading UX:</a
+            >
+            — added neutral shell skeletons for the profile tabs so the layout
+            stays fixed while role, profile, and bookings load, removing
+            “flashes” of the wrong skeletons.
+          </li>
+
+          <li>
+            <a
+              title="View commit on GitHub"
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/Anaid0616/project-exam2/commit/a0b99f00db634b99ae79f3c2ef1726cf85819863"
+              >Pagination & scrolling:</a
+            >
+            — implemented SEO-friendly pagination with URL params and hash
+            anchors so Next/Prev jumps back to the search header instead of the
+            very top of the page.
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/Anaid0616/project-exam2/commit/9014abf385dba8b07dde9a3410b42ef27c3e362f"
+              >Accessibility & semantics:</a
+            >
+            — improved labelling for interactive filters and aligned button
+            roles/ARIA attributes on tabs and forms.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Outcome</h2>
+        <p>
+          The final Holidaze build delivers a responsive, travel-focused booking
+          experience with clear separation between guest and manager roles. URL
+          driven search, stable skeleton states, and profile dashboards make it
+          easier for users to find and manage stays, while the refactored
+          filtering and pagination logic results in fewer API issues and a much
+          smoother perceived performance.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-menu">
+        <ul>
+          <li id="copy">Copyright&copy; 2024 Diana Bergelin</li>
+          <li><a href="../index.html#intro">Home</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="../mjs/hamburger.mjs"></script>
+    <script
+      src="https://kit.fontawesome.com/e9ab0044c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

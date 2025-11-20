@@ -194,7 +194,7 @@ section h2 {
   }
 
   .lines {
-    width: 90%;
+    width: 100%;
   }
 
   #portfolio {
@@ -212,6 +212,11 @@ section h2 {
 
   .about-content {
     gap: 0px;
+  }
+
+  .lines::before,
+  .lines::after {
+    margin: 0 10px;
   }
 }
 
@@ -338,6 +343,6 @@ section h2 {
 
 @media (min-width: 769px) {
   .projects {
-    padding: 40px;
+    padding: 20px 60px;
   }
 }
