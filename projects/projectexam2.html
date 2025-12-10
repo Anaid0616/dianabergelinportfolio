@@ -146,54 +146,33 @@
           </li>
         </ul>
       </section>
-
       <section>
         <h2>Improvements</h2>
-        <ul class="commits">
+
+        <ul class="improvements-list">
           <li>
-            <a
-              title="View commit on GitHub"
-              target="_blank"
-              rel="noopener"
-              href="https://github.com/Anaid0616/project-exam2/commit/a0b99f00db634b99ae79f3c2ef1726cf85819863"
-              >Search filters & URL sync:</a
-            >
-            — rewrote filters to a single “Apply filters” action, reducing API
-            calls and fixing <code>429 Too Many Requests</code> errors.
-          </li>
-          <li>
-            <a
-              title="View commit on GitHub"
-              target="_blank"
-              rel="noopener"
-              href="https://github.com/Anaid0616/project-exam2/commit/8291955b3989dcca81f88f4187129bca9f2badbf"
-              >Profile loading UX:</a
-            >
-            — added neutral shell skeletons for the profile tabs so the layout
-            stays fixed while role, profile, and bookings load, removing
-            “flashes” of the wrong skeletons.
+            <span class="label">Search filters & URL sync:</span>
+            Rewrote filters into a unified “Apply Filters” action, reducing API
+            calls and preventing <code>429 Too Many Requests</code> errors.
           </li>
 
           <li>
-            <a
-              title="View commit on GitHub"
-              target="_blank"
-              rel="noopener"
-              href="https://github.com/Anaid0616/project-exam2/commit/a0b99f00db634b99ae79f3c2ef1726cf85819863"
-              >Pagination & scrolling:</a
-            >
-            — implemented SEO-friendly pagination with URL params and hash
-            anchors so Next/Prev jumps back to the search header instead of the
-            very top of the page.
+            <span class="label">Profile loading UX:</span>
+            Implemented consistent skeleton loaders for profile tabs, preventing
+            layout jumps and replacing incorrect skeleton flashes.
           </li>
+
           <li>
-            <a
-              target="_blank"
-              href="https://github.com/Anaid0616/project-exam2/commit/9014abf385dba8b07dde9a3410b42ef27c3e362f"
-              >Accessibility & semantics:</a
-            >
-            — improved labelling for interactive filters and aligned button
-            roles/ARIA attributes on tabs and forms.
+            <span class="label">Pagination & scrolling:</span>
+            Added SEO-friendly pagination with URL parameters and hash anchors,
+            ensuring the page scrolls back to the search header rather than the
+            top.
+          </li>
+
+          <li>
+            <span class="label">Accessibility & semantics:</span>
+            Improved interactive labels, refined ARIA roles, and increased
+            clarity across filters, tabs, and forms.
           </li>
         </ul>
       </section>

@@ -96,8 +96,16 @@ h2 {
   margin: 1rem 0 0.5rem;
   font-size: 1.4rem;
 }
-.commits a {
-  color: #9ad0ff;
+
+.label {
+  color: #bfbfbf; /* soft grey */
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+section p {
+  margin: 10px 0 18px 0;
+  line-height: 1.5;
 }
 
 /* Footer */

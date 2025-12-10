@@ -318,6 +318,12 @@ section h2 {
   }
 }
 
+@media (max-width: 1150px) {
+  #about {
+    padding-top: 100px;
+  }
+}
+
 /* Media queries min 600px max 1024px */
 @media (min-width: 600px) and (max-width: 1024px) {
   .about-content {
