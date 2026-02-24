@@ -22,8 +22,9 @@ body {
 
 /* Header */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px 0px;
@@ -61,7 +62,10 @@ header {
   background-color: #fff;
   /* square ends => no border-radius */
   transform-origin: 50% 50%;
-  transition: transform 0.25s ease, top 0.25s ease, opacity 0.2s ease;
+  transition:
+    transform 0.25s ease,
+    top 0.25s ease,
+    opacity 0.2s ease;
 }
 
 /* exact integer positions to avoid wobble */
