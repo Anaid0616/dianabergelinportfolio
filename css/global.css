@@ -41,10 +41,12 @@ header {
 
 /* === Hamburger === */
 .hamburger {
+  background: none;
+  border: none;
   display: none;
   position: relative;
   width: 24px;
-  height: 19px;
+  height: 20px;
   cursor: pointer;
   align-items: center;
   justify-content: center;
