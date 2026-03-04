@@ -55,8 +55,13 @@ h1#title {
 .article {
   max-width: var(--article-max);
   margin: 0 auto;
-  padding: 0 var(--pad) 3rem;
+  padding: calc(var(--header-h) + 1rem) var(--pad) 3rem;
 }
+
+section {
+  scroll-margin-top: calc(var(--header-h) + 20px);
+}
+
 .hero {
   margin: 1rem 0 2rem;
 }
